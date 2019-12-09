@@ -18,9 +18,7 @@ var app = new Vue({
       };
 
       this.todos.unshift(newTodo);
-
       this.newTodoName = "";
-
       this.persistData();
     },
     deleteTodo: function(index) {
