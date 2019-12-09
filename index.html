@@ -54,7 +54,7 @@
           <span v-bind:class="{doneTask: todo.isDone}">{{ todo.name }}</span>
           <div class="float-right">
             <i
-              class="fas "
+              class="fas"
               v-bind:class="{'fa-check': !todo.isDone, 'fa-redo': todo.isDone}"
               v-on:click="toggleDone(index)"
             ></i>
