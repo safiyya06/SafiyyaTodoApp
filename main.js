@@ -6,8 +6,8 @@ var app = new Vue({
   },
 
   created: function() {
-    if (localStorage.getItem("todos")) {
-      this.todos = JSON.parse(localStorage.getItem("todos"));
+    if (localStorage.getItem("localStorageTodos")) {
+      this.todos = JSON.parse(localStorage.getItem("localStorageTodos"));
     }
   },
   methods: {
@@ -32,7 +32,7 @@ var app = new Vue({
       this.persistData();
     },
     persistData: function() {
-      localStorage.setItem("todos", JSON.stringify(this.todos));
+      localStorage.setItem("localStorageTodos", JSON.stringify(this.todos));
     }
   }
 });
